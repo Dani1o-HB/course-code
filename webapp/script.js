@@ -30,7 +30,7 @@ function returnMovies(url){
 
             const center = document.createElement('center');
 
-            title.innerHTML = `${element['#TITLE']}`;
+            title.innerHTML = `${element['#TITLE']}<br><a href="movie.html?id=${element['#IMDB_ID'].slice(2)}&title=${element['#TITLE']}">reviews</a>`;
             image.src = `${element['#IMG_POSTER']}`;
 
             center.appendChild(image);
